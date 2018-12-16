@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFE47A</color>
+    <color name="colorPrimaryDark">#FFE47A</color>
+    <color name="colorAccent">#3D7EAA</color>
+    <color name="LightGreen900">#33691E</color>
+    <color name="BlueGray500">#607D8B</color>
+    <color name="BlueGray700">#455A64</color>
+    <color name="Red700">#d32f2f</color>
+    <color name="Lime400">#D4E157</color>
+    <color name="DeepOrange300">#FF8A65</color>
+    <color name="CyanA200">#18FFFF</color>
+</resources>

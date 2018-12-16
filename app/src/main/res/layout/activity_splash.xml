@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mkf.shoppingscreen.activitys.SplashActivity"
+    tools:ignore="contentDescription"
+    android:background="@drawable/splashscreen_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5">
+
+        <TextView
+            android:id="@+id/splash_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/merienda"
+            android:gravity="bottom"
+            android:text="Shopping Screen"
+            android:textColor="@color/BlueGray700"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight=".5">
+        <ImageView
+            android:id="@+id/splash_icon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/shoppingscreen_anim_icon"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+</LinearLayout>

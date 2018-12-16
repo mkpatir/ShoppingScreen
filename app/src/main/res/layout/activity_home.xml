@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mkf.shoppingscreen.activitys.HomeActivity"
+    tools:ignore="contentDescription"
+    android:background="@drawable/back_image2"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/home_start_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:fontFamily="@font/asap"
+        android:text="Welcome to Shopping Screen"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+    <LinearLayout
+        android:id="@+id/home_scan_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/home_scanbarcode_background"
+        android:padding="20dp"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/barcode_icon"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan Barcode"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_enterbarcodebutton_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/home_enterbarcode"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Enter Ordercode"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:fontFamily="@font/asap"
+            android:background="@drawable/home_scanbarcode_background"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:visibility="visible"
+            android:onClick="enterBarcodeButton"
+            android:layout_marginBottom="2.5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_enterbarcode_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:paddingTop="2.5dp"
+        android:visibility="gone">
+        <EditText
+            android:id="@+id/home_enterbarcode_text"
+            android:layout_width="match_parent"
+            android:layout_height="37.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@drawable/barcode_icon"
+            android:drawablePadding="7.5dp"
+            android:paddingLeft="7.5dp"
+            android:background="@drawable/home_enterbarcode_edittext_back"
+            android:hint="Enter Ordercode"
+            android:textColor="@android:color/black"
+            android:paddingTop="2.5dp"
+            android:paddingBottom="2.5dp"
+            android:paddingRight="2.5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2.5dp"
+            android:text="Get Orderlist"
+            android:fontFamily="@font/asap"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:background="@drawable/home_scanbarcode_background"
+            android:onClick="getOrderList"/>
+    </LinearLayout>
+</LinearLayout>
